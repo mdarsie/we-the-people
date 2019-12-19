@@ -1,4 +1,4 @@
-# We the People: ## The Citizen Interest Lobby
+# We the People: The Citizen Interest Lobby
 
 ## Planning
 
