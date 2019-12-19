@@ -91,7 +91,7 @@ contactRouter.delete("/:id", (req, res) => {
     });
 });
 
-contactRouter.get("/byName/:type", (req, res) => {
+contactRouter.get("/byType/:type", (req, res) => {
   const contactType = req.params.type;
 
   contactApi
