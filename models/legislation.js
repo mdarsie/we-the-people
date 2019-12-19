@@ -13,7 +13,7 @@ const LegislationSchema = new mongoose.Schema({
   passed: Boolean
 });
 
-const LegislationCollection = mongoose.model("contact", LegislationSchema);
+const LegislationCollection = mongoose.model("legislation", LegislationSchema);
 
 module.exports = {
   getHelloWorldString
