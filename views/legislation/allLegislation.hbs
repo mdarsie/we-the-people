@@ -1,3 +1,17 @@
-<h1>This is a sample hbs file</h1>
+<h1>All Legislation</h1>
 
-<p> please delete this when you start your project. </p>
+
+<a href="/legislation/new">
+    <button>Create Legislation</button>
+</a>
+
+
+{{#each allLegislation}}
+
+<a href="/legislation/{{_id}}">
+    <div>
+        <span>{{title}}</span>
+    </div>
+</a>
+
+{{/each}}

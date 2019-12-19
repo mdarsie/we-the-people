@@ -1,15 +1,18 @@
-<form method="POST" action="<TODO: models url here (e.g: /accounts)>?_method=PUT">
+<h1>Edit Legislation</h1>
 
-  <!--
-    Template for creating input form for a string object key called stringMember
-    NOTE: for numeric input fields use `type="number"`
-  -->
-  <input type="text" value="{{<TODO: model.stringMember>}}" name="<TODO: stringMember (e.g: name)>" />
+<form method="POST" action="/legislation/{{legislation._id}}?_method=PUT">
 
-  <!--
-    Template for creating input form for a boolean object member
-  -->
-  <input type="checkbox" name="<TODO: booleanMember (e.g: isActive)>" value="true" {{#if <TODO: model.booleanMember (e.g: account.isActive)}}checked{{/if}} />
+  <input type="text" value="{{legislation.title}}" placeholder="title" name="name" />
+  <input type="text" value="{{legislation.billID}}" placeholder="billID" name="billID" />
+  <input type="checkbox" name="pending" value="true" {{#if <legislation.support }}checked{{/if}} />
+  <input type="text" value="{{legislation.scope}}" placeholder="scope" name="scope" />
+  <input type="text" value="{{legislation.body}}" placeholder="body" name="body" />
+  <input type="text" value="{{legislation.committee}}" placeholder="committee" name="committee" />
+  <input type="text" value="{{legislation.subCommittee}}" placeholder="subcommittee" name="subCommittee" />
+  <input type="text" value="{{legislation.legislationText}}" placeholder="legislationText" name="legislationText" />
+  <input type="checkbox" name="pending" value="true" {{#if <legislation.pending }}checked{{/if}} />
+  <input type="checkbox" name="passed" value="true" {{#if <legislation.passed }}checked{{/if}} />
 
-  <input type="submit" value="Update Shop" />
+
+  <input type="submit" value="Save" />
 </form>

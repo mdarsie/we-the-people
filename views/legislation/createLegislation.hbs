@@ -1,12 +1,17 @@
-<form method="POST" action="/<TODO: models url here (e.g: /accounts)>">
+<h1>Create Legislation</h1>
 
-  <!--
-    Template for creating input form for a string object key called stringMember
-    NOTE: for numeric input fields use `type="number"`
-  --->
-  <input type="text" value="{{<TODO: model.stringMember (e.g: account.name)}}" placeholder="name" name="<TODO: stringMember (e.g: name)>" />
+<form method="POST" action="/legislation/">
 
-  <input type="checkbox" name="<TODO: model.booleanMember (e.g: account.isActive)" value="true" />
+  <input type="text" value="" placeholder="title" name="name" />
+  <input type="text" value="" placeholder="billID" name="billID" />
+  <input type="checkbox" name="support" value="true" />
+  <input type="text" value="" placeholder="scope" name="scope" />
+  <input type="text" value="" placeholder="body" name="body" />
+  <input type="text" value="" placeholder="committee" name="committee" />
+  <input type="text" value="" placeholder="subCommittee" name="subCommittee" />
+  <input type="text" value="" placeholder="legislationText" name="legislationText" />
+  <input type="checkbox" name="pending" value="true" />
+  <input type="checkbox" name="passed" value="true" />
 
-  <input type="submit" value="Create Shop" />
+  <input type="submit" value="Create Legislation" />
 </form>
