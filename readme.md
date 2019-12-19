@@ -6,4 +6,4 @@
 [Trello Board](https://trello.com/b/hbWZi7xe)
 
 Entity Relationship Diagram
-! [entity relationship diagram](public/ERD.png)
+! [entity relationship diagram](https://github.com/mdarsie/we-the-people/blob/master/public/ERD.png)
