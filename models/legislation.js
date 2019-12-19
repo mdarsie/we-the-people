@@ -23,8 +23,8 @@ const getAllLegislations = () => {
   return LegislationCollection.find({});
 };
 
-const getLegislationByName = name => {
-  return LegislationCollection.findOne({ name: name });
+const getLegislationByTitle = title => {
+  return LegislationCollection.findOne({ title: title });
 };
 
 const createLegislation = newLegislation => {
@@ -45,5 +45,5 @@ module.exports = {
   createLegislation,
   updateLegislation,
   deleteLegislation,
-  getLegislationByName
+  getLegislationByTitle
 };
