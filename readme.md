@@ -3,7 +3,7 @@
 
 ##Planning
 
-[trello board](https://trello.com/b/hbWZi7xe)
+[Trello Board](https://trello.com/b/hbWZi7xe)
 
 Entity Relationship Diagram
-! [entity relationship diagram](public/ERD.svg)
+! [entity relationship diagram](public/ERD.png)
