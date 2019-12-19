@@ -1,4 +1,4 @@
-const mongoose = require('./connection.js')
+const mongoose = require("./connection.js");
 
 const LegislationSchema = new mongoose.Schema({
   title: String,
@@ -10,12 +10,11 @@ const LegislationSchema = new mongoose.Schema({
   subCommittee: String,
   legislationText: String,
   pending: Boolean,
-  passed: Boolean,
-})
+  passed: Boolean
+});
 
-const LegislationCollection = mongoose.model('contact', LegislationSchema)
-
+const LegislationCollection = mongoose.model("contact", LegislationSchema);
 
 module.exports = {
   getHelloWorldString
-}
+};
