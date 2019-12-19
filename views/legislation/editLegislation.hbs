@@ -2,7 +2,7 @@
 
 <form method="POST" action="/legislation/{{legislation._id}}?_method=PUT">
 
-  <input type="text" value="{{legislation.title}}" placeholder="title" name="name" />
+  <input type="text" value="{{legislation.title}}" placeholder="title" name="title" />
   <input type="text" value="{{legislation.billID}}" placeholder="billID" name="billID" />
   <input type="checkbox" name="pending" value="true" {{#if <legislation.support }}checked{{/if}} />
   <input type="text" value="{{legislation.scope}}" placeholder="scope" name="scope" />

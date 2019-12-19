@@ -1,15 +1,15 @@
-<form method="POST" action="<TODO: models url here (e.g: /accounts)>?_method=PUT">
+<h1>Update Elected Official</h1>
 
-  <!--
-    Template for creating input form for a string object key called stringMember
-    NOTE: for numeric input fields use `type="number"`
-  -->
-  <input type="text" value="{{<TODO: model.stringMember>}}" name="<TODO: stringMember (e.g: name)>" />
+<form method="POST" action="/electedOfficial/{{electedOfficial._id}}?_method=PUT">
 
-  <!--
-    Template for creating input form for a boolean object member
-  -->
-  <input type="checkbox" name="<TODO: booleanMember (e.g: isActive)>" value="true" {{#if <TODO: model.booleanMember (e.g: account.isActive)}}checked{{/if}} />
+  <input type="text" value="{{electedOfficial.name}}" placeholder="name" name="name" />
+  <input type="text" value="{{electedOfficial.title}}" placeholder="title" name="title" />
+  <input type="text" value="{{electedOfficial.picture}}" placeholder="picture" name="picture" />
+  <input type="text" value="{{electedOfficial.scope}}" placeholder="scope" name="scope" />
+  <input type="text" value="{{electedOfficial.body}}" placeholder="body" name="body" />
+  <input type="text" value="{{electedOfficial.phone}}" placeholder="phone" name="phone" />
+  <input type="text" value="{{electedOfficial.email}}" placeholder="email" name="email" />
+  <input type="text" value="{{electedOfficial.webpage}}" placeholder="webpage" name="webpage" />
 
-  <input type="submit" value="Update Shop" />
+  <input type="submit" value="Save" />
 </form>
