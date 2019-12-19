@@ -15,6 +15,35 @@ const LegislationSchema = new mongoose.Schema({
 
 const LegislationCollection = mongoose.model("legislation", LegislationSchema);
 
+const getLegislationById = id => {
+  return LegislationCollection.findById(id);
+};
+
+const getAllLegislations = () => {
+  return LegislationCollection.find({});
+};
+
+const getLegislationByName = name => {
+  return LegislationCollection.findOne({ name: name });
+};
+
+const createLegislation = newLegislation => {
+  return LegislationCollection.create(newLegislation);
+};
+
+const updateLegislation = (id, updatedLegislation) => {
+  return LegislationCollection.updateOne({ _id: id }, updatedLegislation);
+};
+
+const deleteLegislation = id => {
+  return LegislationCollection.deleteOne({ _id: id });
+};
+
 module.exports = {
-  getHelloWorldString
+  getLegislationById,
+  getAllLegislations,
+  createLegislation,
+  updateLegislation,
+  deleteLegislation,
+  getLegislationByName
 };
