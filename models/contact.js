@@ -4,7 +4,7 @@ const ContactSchema = new mongoose.Schema({
   contactType: String,
   date: String,
   from: String,
-  to: String,
+  electedOfficialId: String,
   regarding: String,
   recievedReply: Boolean,
   followUp: Boolean

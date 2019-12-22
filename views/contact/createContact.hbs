@@ -2,17 +2,22 @@
 
 <form method="POST" action="/contact/">
 
-  <input type="text" value="" placeholder="contactType" name="contactType" />
+  {{!-- <input type="text" value="" placeholder="contactType" name="contactType" /> --}}
+  <label>Type of Contact:</label>
+  <select name="contactType" title="Type of contact:">
+    <option value="call">Call</option>
+    <option value="email">Email</option>
+  </select>
+  <label for="date">Date of Contact:</label>
   <input type="text" value="" placeholder="date" name="date" />
+  <label for="from">From:</label>
   <input type="text" value="" placeholder="from" name="from" />
-   
-  {{!-- <select name="officialId">
-    <option value="">NONE</option>
-    {{#each allElectedOfficials}}
+  <label for="to">To:</label>
+  <select name="electedOfficialId">
+    {{#each electedOfficialId}}
     <option value="{{_id}}">{{name}}</option>
     {{/each}}
-  </select> --}}
-
+  </select>
   <input type="text" value="" placeholder="regarding" name="regarding" />
   <input type="checkbox" name="receivedReply" value="false" />
   <input type="checkbox" name="followUp" value="false" />
