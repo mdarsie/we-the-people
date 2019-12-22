@@ -1,3 +1,17 @@
-<h1>This is a sample hbs file</h1>
+<h1>All Contacts</h1>
 
-<p> please delete this when you start your project. </p>
+
+<a href="/contact/new">
+    <button>Record New Contact</button>
+</a>
+
+
+{{#each allContacts}}
+
+<a href="/contact/{{_id}}">
+    <div>
+        <span>{{type}}{{date}}{{to}}{{regarding}}</span>
+    </div>
+</a>
+
+{{/each}}

@@ -1,12 +1,22 @@
-<form method="POST" action="/<TODO: models url here (e.g: /accounts)>">
+<h1>Record New Contact </h1>
 
-  <!--
-    Template for creating input form for a string object key called stringMember
-    NOTE: for numeric input fields use `type="number"`
-  --->
-  <input type="text" value="{{<TODO: model.stringMember (e.g: account.name)}}" placeholder="name" name="<TODO: stringMember (e.g: name)>" />
+<form method="POST" action="/contact/">
 
-  <input type="checkbox" name="<TODO: model.booleanMember (e.g: account.isActive)" value="true" />
+  <input type="text" value="" placeholder="contactType" name="contactType" />
+  <input type="text" value="" placeholder="date" name="date" />
+  <input type="text" value="" placeholder="from" name="from" />
+   
+  {{!-- <select name="officialId">
+    <option value="">NONE</option>
+    {{#each allElectedOfficials}}
+    <option value="{{_id}}">{{name}}</option>
+    {{/each}}
+  </select> --}}
 
-  <input type="submit" value="Create Shop" />
+  <input type="text" value="" placeholder="regarding" name="regarding" />
+  <input type="checkbox" name="receivedReply" value="false" />
+  <input type="checkbox" name="followUp" value="false" />
+
+
+  <input type="submit" value="Record New Contact" />
 </form>

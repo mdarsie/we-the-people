@@ -1,6 +1,7 @@
 const express = require("express");
 
 const contactApi = require("../models/contact.js");
+// const electedOfficialApi = require("../models/electedOfficial.js");
 
 const contactRouter = express.Router();
 
@@ -19,6 +20,16 @@ contactRouter.get("/", (req, res) => {
 contactRouter.get("/new", (req, res) => {
   res.render("contact/createContact");
 });
+
+// contactRouter.get('/new', async (req, res) => {
+//   electedOfficialApi.getAllElectedOfficials()
+//     .then((allElectedOfficials) => {
+//       res.render('contact/createContact', { allElectedOfficials })
+//     })
+//     .catch((error) => {
+//       console.log(error)
+//       res.send(error)
+// });
 
 contactRouter.get("/edit/:id", (req, res) => {
   const contactId = req.params.id;
@@ -107,4 +118,4 @@ contactRouter.get("/byType/:type", (req, res) => {
 
 module.exports = {
   contactRouter
-};
+}
