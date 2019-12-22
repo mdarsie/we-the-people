@@ -4,7 +4,7 @@ const LegislationSchema = new mongoose.Schema({
   title: String,
   billID: String,
   support: Boolean,
-  scope: String,
+  level: String,
   body: String,
   committee: String,
   subCommittee: String,
