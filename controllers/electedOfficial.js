@@ -2,15 +2,14 @@ const express = require("express");
 
 const electedOfficialApi = require("../models/electedOfficial.js");
 
-
 const electedOfficialRouter = express.Router();
 
 electedOfficialRouter.get("/", (req, res) => {
   electedOfficialApi
     .getAllElectedOfficials()
-    .then(allElectedOfficials => {
+    .then(allELectedOfficials => {
       res.render("electedOfficial/allElectedOfficials", {
-        allElectedOfficials
+        allELectedOfficials
       });
     })
     .catch(error => {

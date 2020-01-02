@@ -19,7 +19,7 @@ const getLegislationById = id => {
   return LegislationCollection.findById(id);
 };
 
-const getAllLegislations = () => {
+const getAllLegislation = () => {
   return LegislationCollection.find({});
 };
 
@@ -41,7 +41,7 @@ const deleteLegislation = id => {
 
 module.exports = {
   getLegislationById,
-  getAllLegislations,
+  getAllLegislation,
   createLegislation,
   updateLegislation,
   deleteLegislation,

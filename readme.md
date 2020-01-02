@@ -6,3 +6,6 @@
 
 **Entity Relationship Diagram**
 ![entity relationship diagram](https://github.com/mdarsie/we-the-people/blob/master/public/ERD.png)
+
+**Wireframe**
+![wireframe](https://github.com/mdarsie/we-the-people/blob/master/public/electedOfficial-view.jpeg)

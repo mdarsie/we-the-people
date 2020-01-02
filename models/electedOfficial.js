@@ -1,7 +1,9 @@
 const mongoose = require("./connection.js");
 
 const ElectedOfficialSchema = new mongoose.Schema({
-  name: String,
+  bioguide: String,
+  first: String,
+  last: String,
   title: String,
   picture: String,
   level: String,
@@ -9,7 +11,7 @@ const ElectedOfficialSchema = new mongoose.Schema({
   body: String,
   phone: String,
   email: String,
-  webpage: String
+  url: String
 });
 
 const ElectedOfficialCollection = mongoose.model(
