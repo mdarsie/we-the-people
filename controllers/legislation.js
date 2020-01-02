@@ -1,6 +1,8 @@
 const express = require("express");
 
 const legislationApi = require("../models/legislation.js");
+const contactApi = require("../models/contact.js");
+
 
 const legislationRouter = express.Router();
 

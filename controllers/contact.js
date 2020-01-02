@@ -8,7 +8,7 @@ const contactRouter = express.Router();
 contactRouter.get("/", (req, res) => {
   contactApi
     .getAllContacts()
-    .then((allContacts) => {
+    .then(allContacts => {
       res.render("contact/allContacts", { allContacts });
     })
     .catch(error => {
@@ -21,15 +21,15 @@ contactRouter.get("/", (req, res) => {
 //   res.render("contact/createContact");
 // });
 
-contactRouter.get('/new', async (req, res) => {
-  try{
-    const electedOfficialId= await electedOfficialApi.getAllElectedOfficials()
-      res.render('contact/createContact', { electedOfficialId })
-    }catch(error) {
-      console.log(error)
-      res.send(error)
-      }
-    });
+contactRouter.get("/new", async (req, res) => {
+  try {
+    const electedOfficialId = await electedOfficialApi.getAllElectedOfficials();
+    res.render("contact/createContact", { electedOfficialId });
+  } catch (error) {
+    console.log(error);
+    res.send(error);
+  }
+});
 
 contactRouter.get("/edit/:id", (req, res) => {
   const contactId = req.params.id;
@@ -118,4 +118,4 @@ contactRouter.get("/byType/:type", (req, res) => {
 
 module.exports = {
   contactRouter
-}
+};
