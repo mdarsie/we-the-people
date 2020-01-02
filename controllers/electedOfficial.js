@@ -7,9 +7,10 @@ const electedOfficialRouter = express.Router();
 electedOfficialRouter.get("/", (req, res) => {
   electedOfficialApi
     .getAllElectedOfficials()
-    .then(allELectedOfficials => {
+    .then(allElectedOfficials => {
+      console.log(allElectedOfficials);
       res.render("electedOfficial/allElectedOfficials", {
-        allELectedOfficials
+        allElectedOfficials
       });
     })
     .catch(error => {
