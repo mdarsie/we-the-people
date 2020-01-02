@@ -1,4 +1,7 @@
-<h1>Edit Contact</h1>
+<h1>We the People</h1>
+
+
+<h2>Edit Contact</h2>
 
 <form method="POST" action="/contact/{{contact._id}}?_method=PUT">
 
@@ -7,8 +10,6 @@
   <input type="text" value="{{contact.from}}" placeholder="from" name="from" />
   <input type="text" value="{{contact.toOffical}}" placeholder="to" name="to" />
   <input type="text" value="{{contact.regarding}}" placeholder="regarding" name="regarding" />
-  <input type="checkbox" name="recievedReply" value="false" {{#if <contact.recievedReply }}checked{{/if}} />
-  <input type="checkbox" name="followUp" value="false" {{#if <contact.followUp }}checked{{/if}} />
 
 
   <input type="submit" value="Save" />

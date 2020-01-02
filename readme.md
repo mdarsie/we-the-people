@@ -13,3 +13,10 @@
 ## Purpose
 
 [We the People](https://radiant-ravine-51710.herokuapp.com/) is a database to track calls and emails to elected officials in support or opposition to pending legislation.
+
+## Next Steps
+
+- add many to many relationship for legislation and elected officials
+- incorporate "Contact Congress YAML" data forms
+- build out elected official pages to list legislation, contacts, etc. (see wireframe)
+- add bulk create model to upload large JSON data sets

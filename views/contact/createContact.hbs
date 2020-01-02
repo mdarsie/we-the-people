@@ -1,4 +1,7 @@
-<h1>Record New Contact </h1>
+<h1>We the People</h1>
+
+
+<h2>Record New Contact </h2>
 
 <form method="POST" action="/contact/">
 
@@ -15,13 +18,11 @@
   <label for="to">To:</label>
   <select name="electedOfficialId">
     {{#each electedOfficialId}}
-    <option value="{{_id}}">{{name}}</option>
+    <option value="{{_id}}">{{first}} {{last}}</option>
     {{/each}}
   </select>
   <input type="text" value="" placeholder="regarding" name="regarding" />
-  <input type="checkbox" name="receivedReply" value="false" />
-  <input type="checkbox" name="followUp" value="false" />
-
+  
 
   <input type="submit" value="Record New Contact" />
 </form>
