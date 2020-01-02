@@ -4,14 +4,11 @@
 
   <input type="text" value="{{legislation.title}}" placeholder="title" name="title" />
   <input type="text" value="{{legislation.billID}}" placeholder="billID" name="billID" />
-  <input type="checkbox" name="pending" value="true" {{#if <legislation.support }}checked{{/if}} />
   <input type="text" value="{{legislation.level}}" placeholder="level" name="level" />
   <input type="text" value="{{legislation.body}}" placeholder="body" name="body" />
   <input type="text" value="{{legislation.committee}}" placeholder="committee" name="committee" />
   <input type="text" value="{{legislation.subCommittee}}" placeholder="subcommittee" name="subCommittee" />
   <input type="text" value="{{legislation.legislationText}}" placeholder="legislationText" name="legislationText" />
-  <input type="checkbox" name="pending" value="true" {{#if <legislation.pending }}checked{{/if}} />
-  <input type="checkbox" name="passed" value="true" {{#if <legislation.passed }}checked{{/if}} />
 
 
   <input type="submit" value="Save" />

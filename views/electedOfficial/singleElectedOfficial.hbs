@@ -1,4 +1,12 @@
-<h1>{{electedOfficial.id}}</h1>
+<h1>{{electedOfficial.first}} {{electedOfficial.last}}</h1>
+<h2>{{electedOfficial.body}} {{electedOfficial.state}}</h2>
 
 <img src="{{electedOfficial.picture}}" width="200" />
 
+<a href="{{electedOfficial.webpage}}">
+
+
+
+    <form method="POST" action="/electedOfficial/{{electedOfficial._id}}?_method=DELETE">
+        <input type="submit" value="Delete" />
+    </form>
